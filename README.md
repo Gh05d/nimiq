@@ -5,7 +5,6 @@ To use the update script (on a Linux system), open a Terminal with cmd + alt + t
 bash <(wget -qO- https://raw.githubusercontent.com/gh05d/nimiq/master/update-miner.sh)
 ```
 
-To generate a script that runs the miner without domain and certificates
+Download a script that generates a mining script with your data with this command:
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/gh05d/nimiq/master/generate-dumb-script.sh)
-```
+curl -o generate-dumb-miner.sh https://raw.githubusercontent.com/gh05d/nimiq/master/generate-dumb-script.sh```
