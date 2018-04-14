@@ -7,5 +7,5 @@ bash <(wget -qO- https://raw.githubusercontent.com/gh05d/nimiq/master/update-min
 
 To generate a script that runs the miner without domain and certificates
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/gh05d/nimiq/master/start-dumb-miner.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/gh05d/nimiq/master/generate-mining-script.sh)
 ```
