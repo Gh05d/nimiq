@@ -6,12 +6,18 @@ read WALLET
 echo 'Please enter the number of threads you want to use: '
 read THREADS
 
-cd core/clients/nodejs
+echo "Please enter a name for the mining script: "
+read MININGSCRIPT
 
-echo "The miner runs with $THREADS threads."
+#Generate Mining Script
+cd ..
+touch $MININGSCRIPT
+chmod +x $MININGSCRIPT
 
-echo "You entered this wallet: $WALLET."
+echo "cd core/clients/nodejs/" >> $nimiqScript 
+
+echo 'echo \"The miner runs with $THREADS threads.\"' >> $MININGSCRIPT
 
 env UV_THREADPOOL_SIZE=128 node index.js --dumb --statistics \
  --wallet-address=\"$WALLET\" \
- --miner=$THREADS --network=main
+ --miner=$THREADS --network=main >> $MININGSCRIPT
