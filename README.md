@@ -7,4 +7,4 @@ bash <(wget -qO- https://raw.githubusercontent.com/gh05d/nimiq/master/update-min
 
 Download a script that generates a mining script with your data with this command:
 ```
-curl -o generate-dumb-miner.sh https://raw.githubusercontent.com/gh05d/nimiq/master/generate-dumb-script.sh```
+curl -O generate-dumb-miner.sh https://raw.githubusercontent.com/gh05d/nimiq/master/generate-dumb-script.sh```
