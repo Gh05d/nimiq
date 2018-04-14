@@ -18,6 +18,6 @@ echo "cd core/clients/nodejs/" >> $MININGSCRIPT
 
 echo 'echo \"The miner runs with $THREADS threads.\"' >> $MININGSCRIPT
 
-env UV_THREADPOOL_SIZE=128 node index.js --dumb --statistics \
+env UV_THREADPOOL_SIZE=$THREADS node index.js --dumb --statistics \
  --wallet-address=\"$WALLET\" \
  --miner=$THREADS --network=main >> $MININGSCRIPT
