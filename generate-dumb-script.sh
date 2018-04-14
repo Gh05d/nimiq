@@ -11,7 +11,7 @@ read MININGSCRIPT
 
 #Generate Mining Script
 cd ..
-touch $MININGSCRIPT
+sudo touch $MININGSCRIPT
 chmod +x $MININGSCRIPT
 
 echo "cd core/clients/nodejs/" >> $nimiqScript 
