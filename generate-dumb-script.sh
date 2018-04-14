@@ -12,7 +12,7 @@ read MININGSCRIPT
 #Generate Mining Script
 cd ..
 touch $MININGSCRIPT
-chmod +x $MININGSCRIPT
+sudo chmod +x $MININGSCRIPT
 
 echo "cd core/clients/nodejs/" >> $MININGSCRIPT 
 
