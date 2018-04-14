@@ -4,7 +4,8 @@ echo 'Please enter your wallet address: '
 read WALLET
 
 echo 'Please enter the number of threads you want to use: '
-reat THREADS
+read THREADS
+
 cd core/clients/nodejs
 
 echo "The miner runs with $THREADS threads."
