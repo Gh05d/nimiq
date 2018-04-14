@@ -10,6 +10,8 @@ cd core/clients/nodejs
 
 echo "The miner runs with $THREADS threads."
 
+echo "You entered this wallet: $WALLET."
+
 env UV_THREADPOOL_SIZE=128 node index.js --dumb --statistics \
- --miner=$THREADS --network=main \
- --wallet-address=\"$WALLET\"
+ --wallet-address=\"$WALLET\" \
+ --miner=$THREADS --network=main
