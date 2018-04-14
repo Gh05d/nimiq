@@ -11,10 +11,10 @@ read MININGSCRIPT
 
 #Generate Mining Script
 cd ..
-sudo touch $MININGSCRIPT
+touch $MININGSCRIPT
 chmod +x $MININGSCRIPT
 
-echo "cd core/clients/nodejs/" >> $nimiqScript 
+echo "cd core/clients/nodejs/" >> $MININGSCRIPT 
 
 echo 'echo \"The miner runs with $THREADS threads.\"' >> $MININGSCRIPT
 
